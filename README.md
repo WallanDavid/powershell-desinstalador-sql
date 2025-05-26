@@ -1,21 +1,61 @@
-Desinstalador Profundo do SQL Server
-Este script PowerShell foi desenvolvido para realizar uma desinstalação completa e profunda do SQL Server, removendo todos os seus componentes do sistema, incluindo arquivos e diretórios associados.
+# 🧹 PowerShell – Desinstalador Profundo do SQL Server
 
-Pré-requisitos
-PowerShell (versão 5.1 ou superior)
-Privilégios de administrador para execução do script
-Como Usar
-Baixe o arquivo Uninstall-SQLServer.ps1 para o seu computador.
-Abra o PowerShell como administrador.
-Navegue até o diretório onde o script foi baixado.
-Execute o script com o comando .\Uninstall-SQLServer.ps1.
-Funcionamento do Script
-Verifica se o script está sendo executado como administrador.
-Verifica se há instâncias do SQL Server instaladas no sistema.
-Desinstala cada instância encontrada do SQL Server.
-Remove os registros do SQL Server no registro do Windows.
-Remove arquivos e diretórios associados ao SQL Server.
-Avisos
-Certifique-se de revisar cuidadosamente os resultados antes de executar o script, pois ele realizará alterações no sistema.
-É altamente recomendado fazer um backup dos dados importantes antes de executar este script.
-Este script foi projetado para desinstalar o SQL Server de forma completa e profunda. Use com cautela.
+Este script PowerShell foi desenvolvido para realizar uma **desinstalação completa do SQL Server**, eliminando todas as instâncias e componentes relacionados, incluindo arquivos residuais, diretórios e entradas no registro do Windows.
+
+---
+
+## ⚠️ Aviso Importante
+
+🚨 Este script **realiza alterações críticas no sistema operacional**.  
+Recomenda-se:
+
+- Fazer backup dos dados importantes
+- Verificar se não há outras aplicações dependentes do SQL Server
+- Executar apenas se o objetivo for remover completamente o SQL Server da máquina
+
+---
+
+## ✅ Pré-requisitos
+
+- Windows com **PowerShell 5.1 ou superior**
+- Executar o PowerShell como **Administrador**
+- Permissão para realizar alterações no sistema
+
+---
+
+## ▶️ Como Usar
+
+1. **Baixe o script:**  
+   `desinstaldorsql.ps1`
+
+2. **Abra o PowerShell como Administrador**
+
+3. **Navegue até o diretório onde o script foi salvo:**  
+   `cd "Caminho\do\arquivo"`
+
+4. **Execute o script:**  
+   `.\desinstaldorsql.ps1`
+
+---
+
+## ⚙️ O Que o Script Faz?
+
+- Verifica se está sendo executado com privilégios de administrador  
+- Detecta instâncias instaladas do SQL Server  
+- Desinstala todas as instâncias encontradas  
+- Remove entradas do SQL Server do **registro do Windows**  
+- Apaga **pastas e arquivos** associados ao SQL Server no sistema
+
+---
+
+## 📜 Licença
+
+Este projeto está licenciado sob os termos da [MIT License](LICENSE).
+
+---
+
+## 📫 Contato
+
+**Desenvolvedor:** Wallan David Peixoto  
+**Email:** bobwallan2@gmail.com  
+**LinkedIn:** https://www.linkedin.com/in/wallanpeixoto
